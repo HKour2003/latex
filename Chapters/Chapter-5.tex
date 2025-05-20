@@ -1,0 +1,60 @@
+\chapter{Technologies Used}
+\begin{justify}
+    
+\section{Front-end Technologies}
+\subsection{Next.js} \\
+Next.js is a powerful React framework that enables developers to build modern, high-performance web applications with server-side rendering (SSR) and static site generation (SSG). These features are essential for building fast, SEO-friendly, and scalable platforms like NFLUENCIFY. Key features include:
+\begin{itemize}
+    \item Server-Side Rendering (SSR): Renders pages on the server before sending them to the client, reducing initial load time and improving SEO.
+    \item 	Static Site Generation (SSG): Pre-generates pages at build time for lightning-fast loading and reduced server load.
+    \item 	Dynamic Routing: Supports both file-based routing and dynamic routes for flexible, intuitive navigation structures.
+    \item 	API Routes: Allows seamless serverless API creation, eliminating the need for a separate backend for many use cases.
+    \item 	Image Optimization: Automatic image optimization to improve loading speed and performance.
+    \item 	Built-in CSS and Sass Support: Simplifies styling with support for CSS Modules, global styles, and Sass.
+    \item 	Internationalization: Out-of-the-box support for multi-language applications.
+    \item 	Incremental Static Regeneration (ISR): Enables real-time content updates without full rebuilds, perfect for live influencer profiles.
+\end{itemize}
+Next.js is ideal for NFLUENCIFY as it provides the speed, scalability, and SEO optimization needed to handle high traffic and dynamic content, ensuring a seamless experience for both influencers and brands.
+\par
+
+\subsection{CSS Modules / Tailwind CSS} 
+CSS Modules ensure style encapsulation by scoping CSS to specific components, which prevents style conflicts and enhances maintainability. Tailwind CSS, a utility-first CSS framework, is used to rapidly build custom designs with consistent spacing, colors, and responsiveness. The combination of these tools helps maintain a clean and scalable frontend design system.
+\begin{itemize}
+    \item 	Responsive Design: Built-in support for mobile-first design with responsive breakpoints.
+    \item 	Utility-First Approach: Focuses on low-level utility classes like p-4, text-center, and bg-gray-200 for highly customized designs without writing complex CSS.
+    \item 	Customization: Fully customizable via a configuration file, enabling brand-specific styling.
+    \item 	Component Reusability: Encourages building reusable UI components, reducing code repetition and improving maintainability.
+    \item 	Performance: Small file sizes and fast load times due to optimized, purged CSS for production builds.
+    \end{itemize}
+
+     CSS Modules provide scoped CSS to specific components, avoiding global conflicts and improving maintainability, making it easier to build complex, scalable UIs.
+
+
+\section{Backend Technologies}
+\begin{enumerate}
+\item \textbf{Node.js with Express.js}\\
+The backend of Influencify is built on Node.js, a high-performance JavaScript runtime, and Express.js, a minimalist web framework for Node. This stack provides the foundational structure for managing RESTful APIs, routing, user session management, authentication flows, business logic, and third-party integrations such as payments and messaging services.
+
+\item\textbf{MongoDB}\\
+MongoDB is a NoSQL document-oriented database that stores data in a flexible, JSON-like format. It is ideal for handling diverse data structures such as user profiles, collaboration requests, chat logs, and payment records. Its scalability and indexing capabilities make it well-suited for the growing data needs of the platform.
+\end{enumerate}
+
+\section{Real-Time Communication}
+\textbf{Firebase Realtime Database}\\
+To power instant and dynamic communication between influencers and clients, the platform employs Firebase Realtime Database—a cloud-hosted NoSQL solution that specializes in real-time data synchronization. This technology ensures that messages appear instantly across all connected devices, fostering fluid, uninterrupted conversations.
+\par
+What sets Firebase apart is its ability to push updates automatically, removing the need for users to refresh or reload pages. In addition, it offers offline persistence, meaning users can continue chatting even with intermittent connectivity—conversations are synced the moment the connection is restored.
+\par
+This technology forms the backbone of Influencify's live chat system, enabling responsive, real-time collaboration and building trust through timely interactions.
+\section{User Authentication}
+\textbf{Google Sign-In and Email/Password Authentication}\\
+Influencify supports both social login (Google Sign-In) and traditional email/password login to provide flexible and secure authentication methods for users. Firebase Authentication simplifies the process by offering ready-to-use authentication UIs, robust session management, and integration with other Firebase services. Custom logic can also be implemented to handle role-based access control and user verification.
+\section{Payment Integration}
+The platform includes secure and reliable payment gateways—Razorpay and Stripe—to handle financial transactions. Payments from clients are initially directed to the platform's escrow account and are only released to the influencer once the client confirms campaign fulfillment. This two-step release process ensures trust and transparency. These gateways also support refund handling, payment status updates, and multi-currency transactions.
+
+\section{ Notifications }
+\textbf{Firebase Cloud Messaging }\\
+Firebase Cloud Messaging is used to send real-time web push notifications to users for various events such as new chat messages, campaign updates, approval confirmations, and payment alerts. This keeps users actively informed even when they are not on the platform. FCM supports scheduling, priority messaging, and cross-platform delivery (web and mobile).
+
+
+\end{justify}

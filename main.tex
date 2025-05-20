@@ -1,0 +1,109 @@
+\title{MIET Project Template}
+\author{Team Compile}
+\date{August 2024}
+
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+
+% Packages for mathematical formulas, graphics, and layout
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx, caption, subcaption}
+\usepackage{longtable, multirow, tabularx}
+\usepackage[a4paper,width=160mm,top=25mm,bottom=25mm]{geometry}
+
+% Listings package for pseudocode and code formatting
+\usepackage{listings}
+\usepackage{xcolor}
+
+
+%additional packages
+\usepackage{verbatim}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{minted}
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{longtable}
+\graphicspath{{figures/}}
+\usepackage[a4paper,width=160mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{titlesec}
+\linespread{1.2}
+\usepackage{subcaption}
+\usepackage{schemabloc,tikz}
+\usepackage{amsfonts,epsfig,cite,array,multirow,graphicx,amsmath,amsthm,ltablex,tabularx,setspace,arydshln,amssymb,multirow}
+\usetikzlibrary{circuits, arrows}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bbm}
+\usepackage{mathtools}
+\usepackage{textcomp}
+\usepackage{stackengine}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{ragged2e}
+\usepackage{biblatex}
+%\usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
+\addbibresource{references.bib}
+% hyperlinks
+\usepackage{hyperref} 
+\hypersetup{ colorlinks, citecolor=blue, filecolor=black, linkcolor=black, urlcolor=blue } 
+
+\def\mytitle{Talent Trail}
+\def\myname{\textbf{Atul Kumar[2021a1r072]\\ \vspace{0.1cm} Akshat Amla [2021a1r064]\\ \vspace{0.1cm} Vivek Koul [2021a1r080]}\\}
+\def\degree{Bachelor of Technology}
+\def\mydegree{Computer Science \& Engineering}
+\def\mysupervisor{Dr. Mehak Mengi \\ Assistant Professor, CSE}
+\def\myrollno{2021A1RXX}
+\def\mydep{Department of Computer Sciences and Engineering}
+\addbibresource{references.bib}
+\begin{document}
+
+%Front Matter
+\include{./FrontMatter/Title}
+ \pagenumbering{roman}
+\input{FrontMatter/certificate}
+\addcontentsline{toc}{chapter}{Certificate}
+\input{FrontMatter/examiner}
+\addcontentsline{toc}{chapter}{Certificate of Approval of Examiners}
+\input{FrontMatter/Acknowledgement}
+\addcontentsline{toc}{chapter}{Acknowlegement}
+\input{FrontMatter/declaration}
+\addcontentsline{toc}{chapter}{Declaration}
+\input{FrontMatter/Student Information}
+\addcontentsline{toc}{chapter}{Student Information}
+\input{FrontMatter/Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\tableofcontents
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+\input{FrontMatter/abbreviations}
+\addcontentsline{toc}{chapter}{Abbreviations}
+%Chapters
+\clearpage
+ \pagenumbering{arabic}
+\include{./Chapters/Chapter-1}
+\include{./Chapters/Chapter-2}
+\include{./Chapters/Chapter-3}
+\include{./Chapters/Chapter-4}
+\include{./Chapters/Chapter-5}
+\include{./Chapters/Chapter-6}
+%\include{./Chapters/Chapter-7}
+%\include{./Chapters/Chapter-8}
+%\include{./Chapters/Chapter-9}
+\input{Chapters/References}
+\addcontentsline{toc}{chapter}{References}
+\end{document}
